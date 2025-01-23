@@ -14,10 +14,10 @@ end
 get("/dice/2/6") do
   @rolls = []
   2.times do
-    die = rand(1..6)     
-    @rolls.push(die) 
-  end         # 2 six sided dice
-  erb(:two_six)
+    die = rand(1..6)     # random number
+    @rolls.push(die)     # push the random number to the arrat
+  end                    # 2 six sided dice
+  erb(:two_six)          # the route goes to the respective erb view
 end
 
 
