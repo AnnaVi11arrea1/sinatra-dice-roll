@@ -7,11 +7,14 @@
   <% end %>
 </ul>
 
-<% if @die == 1%>
+<% if @die == 1 %>
   <p style="color: red"><%= @die %></p>
 <% elsif @die == 20 %>
   <p style="color: green"><%= @die %></p>
 <% else %>
   <p><%= @die %></p>
 <% end %>
- <a href="/">Home</a>
+
+<h3>Sum: <%= @outcome %></h3>
+
+  <a href="/">Home</a>
